@@ -1,17 +1,27 @@
-## Foundry
+# BasicNFT
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+BasicNFT is a simple smart contract built using OpenZeppelin's ERC721 standard. It allows users to mint their own NFTs easily.
 
-Foundry consists of:
+## Features
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+- **ERC721 Implementation:** Utilizes OpenZeppelin's implementation for secure and standard functionality.
+- **Minting:** Users can mint unique NFTs directly from the smart contract.
+- **Metadata Support:** Each NFT can have unique metadata associated with it.
 
-## Documentation
+## How to Use
 
-https://book.getfoundry.sh/
+### Prerequisites
+
+- Install [Foundry](https://getfoundry.sh/) for smart contract development.
+- Have a supported Ethereum wallet (e.g., MetaMask).
+- Access to an Ethereum testnet like Sepolia.
+
+### Setup
+
+1. Clone this repository:
+   ```bash
+   git clone <repository_url>
+   cd <repository_name>
 
 ## Usage
 
@@ -48,7 +58,7 @@ $ anvil
 ### Deploy
 
 ```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
+$ forge script script/DeployBasicNFT.sol --rpc-url <your_rpc_url> --private-key <your_private_key>
 ```
 
 ### Cast
